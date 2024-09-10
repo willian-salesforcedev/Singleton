@@ -1,0 +1,11 @@
+public class Fila {
+    private static Fila instUnica;
+
+    public static Fila getInstance() {
+        if (instUnica == null) {
+            instUnica = new Fila();
+        }
+        return instUnica;
+    }
+
+  }
